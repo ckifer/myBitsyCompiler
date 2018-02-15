@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Initial Commit!")
+let BitsyVersion = "0.1.0"
+
+
 
