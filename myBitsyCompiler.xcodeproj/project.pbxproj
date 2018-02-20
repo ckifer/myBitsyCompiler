@@ -10,6 +10,7 @@
 		FFE140882035D97D00A396B2 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE140872035D97D00A396B2 /* Token.swift */; };
 		FFE1408A2035F02900A396B2 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE140892035F02900A396B2 /* TokenType.swift */; };
 		FFE1408C2035FC9800A396B2 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1408B2035FC9800A396B2 /* Tokenizer.swift */; };
+		FFE1408E2037938900A396B2 /* CharStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1408D2037938900A396B2 /* CharStream.swift */; };
 		FFE4E4AA2033C38100EDCEDA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E4A92033C38100EDCEDA /* main.swift */; };
 		FFE4E4B12034CBC300EDCEDA /* ArgumentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE4E4B02034CBC300EDCEDA /* ArgumentConfig.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		FFE140872035D97D00A396B2 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		FFE140892035F02900A396B2 /* TokenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
 		FFE1408B2035FC9800A396B2 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		FFE1408D2037938900A396B2 /* CharStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharStream.swift; sourceTree = "<group>"; };
 		FFE4E4A62033C38100EDCEDA /* myBitsyCompiler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myBitsyCompiler; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE4E4A92033C38100EDCEDA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FFE4E4B02034CBC300EDCEDA /* ArgumentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentConfig.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				FFE4E4B02034CBC300EDCEDA /* ArgumentConfig.swift */,
 				FFE140872035D97D00A396B2 /* Token.swift */,
 				FFE1408B2035FC9800A396B2 /* Tokenizer.swift */,
+				FFE1408D2037938900A396B2 /* CharStream.swift */,
 				FFE140892035F02900A396B2 /* TokenType.swift */,
 			);
 			path = myBitsyCompiler;
@@ -135,6 +138,7 @@
 				FFE140882035D97D00A396B2 /* Token.swift in Sources */,
 				FFE1408C2035FC9800A396B2 /* Tokenizer.swift in Sources */,
 				FFE1408A2035F02900A396B2 /* TokenType.swift in Sources */,
+				FFE1408E2037938900A396B2 /* CharStream.swift in Sources */,
 				FFE4E4B12034CBC300EDCEDA /* ArgumentConfig.swift in Sources */,
 				FFE4E4AA2033C38100EDCEDA /* main.swift in Sources */,
 			);
