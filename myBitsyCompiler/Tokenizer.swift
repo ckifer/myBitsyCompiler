@@ -45,6 +45,31 @@ private extension Tokenizer {
         switch codeStream.current {
         case isWhitespace:
             return Whitespace(value: take(matching: isWhitespace))
+        case isNumber:
+            return Integer(value: take(matching: isNumber))
+        case isParen:
+            let parenChar = takeOne()
+            guard let parenToken = Paren(string: parenChar) else {
+                fatalError("Unexpected Paren String: \(parenChar)")
+            }
+            return parenToken
+        case isIdentifier:
+            let ident = take(matching: isIdentifier)
+            if let key = Keyword(string: ident) {
+                return key
+            } else {
+                return Variable(value: ident)
+            }
+        case isOperator:
+            let opString = take(matching: isOperator)
+            guard let opChar = opString.first, let opToken = Operator(string: String(opChar)), opString.count == 1 else {
+                fatalError("Illegal Operator: \(opString)")
+            }
+           
+            
+            return opToken
+        case CommentOpen:
+            return takeComment()
         default:
             fatalError("Illegal character: \"\(codeStream.current)\"")
         }
@@ -116,9 +141,25 @@ private extension Tokenizer {
             }
     }
     
-    // custom pattern matching for Characters
-    private func ~= (pattern: (Character) -> (Bool), value: Character) -> Bool {
-        return pattern(value)
+    // Returns true if `char` is a valid identifier character in Bitsy,
+    // that is, one used for keywords and variable names
+    private func isIdentifier(_ char: Character) -> Bool {
+        switch char {
+        case "a"..."z":
+            return true
+        case "A"..."z":
+            return true
+        case "_":
+            return true
+        default:
+            return false
+        }
     }
     
+    
+}
+
+// custom pattern matching for Characters
+private func ~=(pattern: (Character) -> (Bool), value: Character) -> Bool {
+    return pattern(value)
 }
