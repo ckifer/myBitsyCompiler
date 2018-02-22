@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1E9512203E474700B49F79 /* CodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1E9511203E474700B49F79 /* CodeGenerator.swift */; };
 		FFE140882035D97D00A396B2 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE140872035D97D00A396B2 /* Token.swift */; };
 		FFE1408A2035F02900A396B2 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE140892035F02900A396B2 /* TokenType.swift */; };
 		FFE1408C2035FC9800A396B2 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1408B2035FC9800A396B2 /* Tokenizer.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF1E9511203E474700B49F79 /* CodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenerator.swift; sourceTree = "<group>"; };
 		FFE140872035D97D00A396B2 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		FFE140892035F02900A396B2 /* TokenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
 		FFE1408B2035FC9800A396B2 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				FFE1408B2035FC9800A396B2 /* Tokenizer.swift */,
 				FFE1408D2037938900A396B2 /* CharStream.swift */,
 				FFE140892035F02900A396B2 /* TokenType.swift */,
+				FF1E9511203E474700B49F79 /* CodeGenerator.swift */,
 			);
 			path = myBitsyCompiler;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE140882035D97D00A396B2 /* Token.swift in Sources */,
+				FF1E9512203E474700B49F79 /* CodeGenerator.swift in Sources */,
 				FFE1408C2035FC9800A396B2 /* Tokenizer.swift in Sources */,
 				FFE1408A2035F02900A396B2 /* TokenType.swift in Sources */,
 				FFE1408E2037938900A396B2 /* CharStream.swift in Sources */,

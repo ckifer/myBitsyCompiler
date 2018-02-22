@@ -8,8 +8,10 @@
 
 import Foundation
 
+// define comment open char
 private let CommentOpen = Character("{")
 
+// define comment close char
 private let CommentClose = Character("}")
 
 class Tokenizer {
@@ -29,10 +31,6 @@ class Tokenizer {
     func advance() {
         current = takeNext()
     }
-    
-    
-    
-    
 }
 
 /**
@@ -111,12 +109,12 @@ private extension Tokenizer {
         return Comment(value: commentText)
     }
     
-    
-    
+    // returns true if this character is whitespace
     private func isWhitespace(_ char: Character) -> Bool {
         return char == "\n" || char == "\t" || char == " "
     }
     
+    // returns true is this character is a number
     private func isNumber(_ char: Character) -> Bool {
         switch char {
         case "0"..."9":
@@ -133,6 +131,7 @@ private extension Tokenizer {
         stringChar == TokenType.rightParen.rawValue
     }
     
+    // returns true if this character is a mathematical operator + - / * %
     private func isOperator(_ char: Character) -> Bool {
         return TokenType.operators.map { op in
             return String(char) == op.rawValue
@@ -155,8 +154,6 @@ private extension Tokenizer {
             return false
         }
     }
-    
-    
 }
 
 // custom pattern matching for Characters
