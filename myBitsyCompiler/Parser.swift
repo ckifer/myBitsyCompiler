@@ -10,4 +10,6 @@ import Foundation
 
 class Parser {
     
+    fileprivate let tokenizer: Tokenizer
+    fileprivate let generator: CodeGenerator
 }
