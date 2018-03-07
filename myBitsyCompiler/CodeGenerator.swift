@@ -52,7 +52,7 @@ enum CodeGenOperation {
 protocol CodeGenerator: IntermediateBuilder {
     
     // code emitter to give instructions to
-    
+    var emitter: CodeEmitter { get }
     
     // emits code that must be before all other code
     func header()
@@ -142,11 +142,11 @@ protocol CodeGenerator: IntermediateBuilder {
 
 extension CodeGenerator {
     func emitLine(_ code: String = "") {
-        
+        emitter.emit(code: "\(code)\n")
     }
     
     // finalize the intermediate code in target language to produce binary
     func finalize() {
-        
+        emitter.finalize(withIntermediate: self)
     }
 }
