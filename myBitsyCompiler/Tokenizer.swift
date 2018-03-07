@@ -63,8 +63,6 @@ private extension Tokenizer {
             guard let opChar = opString.first, let opToken = Operator(string: String(opChar)), opString.count == 1 else {
                 fatalError("Illegal Operator: \(opString)")
             }
-           
-            
             return opToken
         case CommentOpen:
             return takeComment()

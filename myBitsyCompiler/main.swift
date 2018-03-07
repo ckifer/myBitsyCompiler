@@ -11,4 +11,4 @@ import Foundation
 let BitsyVersion = "0.1.0"
 let config = ArgumentConfig(version: BitsyVersion)
 
-
+let generator = config
